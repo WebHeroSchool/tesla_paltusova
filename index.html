@@ -7,94 +7,139 @@
     <title>Tesla Project</title>
 </head>
 <body>
-    <header class="menu">
-        <img src="img/Logo.png" alt="tesla">
-        <ul class="nav">
-            <li>Model S</li>
-            <li>Model X</li>
-            <li>Model 3</li>
-            <li>Roadster</li>
-            <li>Energy</li>
-        </ul>
-        <ul class="reg">
-            <li>Магазин</li>
-            <li>Войти</li>
-        </ul>
+    <!-- Шапка сайта меню навигации-->
+    <header class="header">  
+            <img src="img/Logo.png" alt="tesla" class="header__logo">
+            <nav class="header__menu">
+                <ul class="header__menu_item">
+                    <li class="header__menu_link"><a href="#">Model S</a></li>
+                    <li class="header__menu_link"><a href="#">Model X</a></li>
+                    <li class="header__menu_link"><a href="#">Model 3</a></li>
+                    <li class="header__menu_link"><a href="#">Roadster</a></li>
+                    <li class="header__menu_link"><a href="#">Energy</a></li>
+                </ul>
+            </nav>
+            <ul class="header__reg">
+                <li class="header__reg_link"><a href="#">Магазин</a></li>
+                <li class="header__reg_link"><a href="#">Войти</a></li>
+            </ul>
     </header>
+    <!--Часть сайта с баннером-->
+    
     <section class="banner">
-        <h1 class="title">Model S</h1>
-        <p>Добро пожаловать в будущее!</p>
-        <img src="img/banner.png" alt="banner">
-        <
+        <h1 class="banner__title">Model S</h1>
+        <p class="bunner__subtitle">Добро пожаловать в будущее!</p>
+        <img src="img/banner.png" alt="banner" class="banner__img">
     </section>
-    <section class="info">
-        <div>
-            <h2>2,7 сек</h2>
-            <p>0-100 км/час</p>
-        </div>
-        <div>
-            <h2>632 км</h2>
-            <p>Запас хода</p>
-        </div>
-        <div>
-            <h3>Тест драйв</h3>
-        </div>
-        <div>
-            <button>Заказать</button>
-        </div>
+    <!--Информация под баннером-->
+    <section class="wrap">
+        <article class="wrap__char">
+            <div class="wrap__char_section">
+                <img src="img/icon/speed.png" alt="speed" class="wrap__char_img">
+                <p class="wrap__char_up">2,7 сек</p>
+                <span class="wrap__char_down">0-100 км/час</span>
+            </div>
+            <div class="wrap__char_section">
+                <img src="img/icon/stroke.png" alt="stroke" class="wrap__char_img">
+                <p class="wrap__char_up">632 км</p>
+                <span class="wrap__char_down">Запас хода</span>
+            </div>
+        </article>
+        <article class="wrap__test">
+            <div class="wrap__test_section">
+                <img src="img/icon/test.png" alt="test" class="wrap__test_img">
+                <p class="wpap__test_text">Тест драйв</p>
+            </div>
+            <div class="wrap__test_section">
+                <button class="wrap__test_btn">Заказать</button>
+            </div>
+        </article>
     </section>
-    <main>
-        <section class="wrapper">
-            <h1 class="subtitle">Model S</h1>
-            <aside class="content">
-                <h2>Будущее вождения</h2>
-                <p>Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</p>
-                <div> 
-                    <div>
-                        <h3>17 дюймов</h3>
-                        <p>Большой дисплей</p>
+    <!-- Основная информация страницы-->
+    <main class="container__main">
+        <section class="conteiner__future">
+            <h1 class="future__title">Model S</h1>
+            <aside class="future__sdb">
+                <h2 class="future__sdb_title">Будущее вождения</h2>
+                <p class="future__sdb_text">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</p>
+                <div class="future__sdb_info"> 
+                    <div class="info__section">
+                        <img src="img/icon/phone.png" alt="phone" class="info__section_img">
+                        <h3 class="info__section_title">17 дюймов</h3>
+                        <p class="info__section_text">Большой дисплей</p>
                     </div></div>>
-                    <div>
-                        <h3>Беспроводное обновление ПО</h3>
-                        <p>Повышенная функциональность</p>
+                    <div class="info__section">
+                        <img src="img/icon/wi-fi.png" alt="wi-fi" class="info__section_img">
+                        <h3 class="info__section_title">Беспроводное обновление ПО</h3>
+                        <p class="info__section_text">Повышенная функциональность</p>
                     </div>
-                    <div>
-                        <h3>894 литра</h3>
-                        <p>Объем грузового пространства</p>
+                    <div class="info__section">
+                        <img src="img/icon/bag.png" alt="bag" class="info__section_img">
+                        <h3 class="info__section_title">894 литра</h3>
+                        <p class="info__section_text">Объем грузового пространства</p>
                     </div>
                 </div>
-                <div class="form">
-                    <p>Узнать больше</p>
-                    <button>Заказать</button>
+                <div class="future__form">
+                    <img src="img/icon/info.png" alt="?" class="future__form_img">
+                    <p class="future__form_info">Узнать больше</p>
+                    <button class="future__form_btn">Заказать</button>
                 </div> 
             </aside>
         </section>
-        <section class="wrapper">
-            <aside class="content">
-                <div>
-                    <h3>Самый безопасный
-                        автомобиль в мире</h3>
-                    <p>Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.
+        <section class="conteiner__raiting">
+            <aside class="container__raiting_sdb">
+                <div class="raiting__sdb">
+                    <h2 class="raiting__sdb_title">Самый безопасный
+                        автомобиль в мире</h2>
+                    <p class="raiting__sdb_text">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.
                     </p>
                 </div>
-                <div>
-                    <h3>Оценка защиты: </h3>
-                    <ul class="list">
-                        <li class="item">Спереди</li>
-                        <li class="item">Сбоку</li>
-                        <li class="item">Сбоку (стойка)</li>
-                        <li class="item">Водитель</li>
-                        <li class="item">Пассажир</li>
+                <div class="raiting__sdb">
+                    <h2 class="raiting__sdb_title">Оценка защиты: </h2>
+                    <ul class="raiting__list">
+                        <li class="raiting__list_item">Спереди</li>
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                        <li class="raiting__list_item">Сбоку</li>
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                        <li class="raiting__list_item">Сбоку (стойка)</li>
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">  
+                        <li class="raiting__list_item">Водитель</li>
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                        <li class="raiting__list_item">Пассажир</li>
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
+                            <img src="img/icon/Star.png" alt="*" class="raiting__star_img">
                     </ul>
                 </div>
-                <div>
-                    <h2>5 звезд</h2>
-                    <p>безопасности</p>
+                <div class="raiting__sdb_star">
+                    <img src="img/icon/garant.png" alt="garant" class="sdb__star_img">
+                    <h2 class="sdb__star_title">5 звезд</h2>
+                    <p class="sdb__star_subtitle">безопасности</p>
                 </div>
-                <div class="form">
-                    <p>Узнать больше</p>
-                    <button>Заказать</button>
+                <div class="raiting__form">
+                    <img src="img/icon/info.png" alt="?" class="raiting__form_img">
+                    <p class="raiting__form_info">Узнать больше</p>
+                    <button class="raiting__form_btn">Заказать</button>
                 </div>
+                <img src="img/ car.png" class="raiting__img">
             </aside>
         </section>
     </main>

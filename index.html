@@ -16,7 +16,7 @@
             <img src="img/Logo.png" alt="tesla" class="header__logo">
             <nav class="header__menu">
                 <ul class="menu__item">
-                    <li class="menu__link"><a href="#">Model S</a></li>
+                    <li class="menu__link menu__link_red"><a href="#">Model S</a></li>
                     <li class="menu__link"><a href="#">Model X</a></li>
                     <li class="menu__link"><a href="#">Model 3</a></li>
                     <li class="menu__link"><a href="#">Roadster</a></li>
@@ -24,8 +24,8 @@
                 </ul>
             </nav>
             <ul class="header__reg">
-                <li class="reg__link"><a href="#">Магазин</a></li>
-                <li class="reg__link"><a href="#">Войти</a></li>
+                <li class="menu__link"><a href="#">Магазин</a></li>
+                <li class="menu__link"><a href="#">Войти</a></li>
             </ul>
             <img src="img/icon/menu.svg" alt="menu" class="header__reg_menu">
         </header>
@@ -41,37 +41,38 @@
     <section class="wrap">
         <div class="wrap__char_item">
             <div class="char">
-                    <div class="char__item">
-                        <img src="img/icon/speed.png" alt="speed">
-                    </div>
-                    <div class="char__item">
-                        <div class="charset__first">
-                            <span class="char__up_big">2,7</span>
-                            <span class="char__up_mini">сек</span>
+                <div class="char__item">
+                    <div class="char__item_block">
+                        <div  class="char__img">
+                            <img src="img/icon/speed.png" alt="speed" class="char__img">
                         </div>
-                        <div class="charset__second">
-                            0-100 км/час
+                        <span class="char__up_big">2,7</span>
+                        <span class="char__up_mini">сек</span>
+                    </div>
+                    <div class="charset__second">
+                        0-100 км/час
+                    </div>
+                </div>
+                <div class="char__item">
+                    <div class="char__item_block">
+                        <div class="char__img">
+                            <img src="img/icon/stroke.png" alt="stroke" class="char__img">
                         </div>
+                        <span class="char__up_big">632</span>
+                        <span class="char__up_mini">км</span>
                     </div>
-                    <div class="char__item char__item_left">
-                        <img src="img/icon/stroke.png" alt="stroke">
+                    <div class="charset__second">
+                        запас хода
                     </div>
-                    <div class="char__item">
-                        <div class="charset__first">
-                            <span class="char__up_big">632</span>
-                            <span class="char__up_mini">км</span>
-                        </div>
-                        <div class="charset__second">
-                            запас хода
-                        </div>
-                    </div>
-                    <div class="char__button">
-                        <button class="char__btn_test">
-                            <img src="img/icon/test.png" alt="test" class="test__img">
-                            <span class="test__text">Тест драйв</span>
-                        </button>
-                        <button class="char__btn_red">Заказать</button>
-                    </div>
+                </div>
+                <div class="char__button">
+                    <button class="char__btn_test">
+                        <img src="img/icon/test.png" alt="test" class="test__img_black">
+                        <img src="img/icon/test_red.png" alt="test" class="test__img_red">
+                        <span class="test__text">Тест драйв</span>
+                    </button>
+                    <button class="char__btn_red">Заказать</button>
+                </div>
             </div>
         </div>
     </section>

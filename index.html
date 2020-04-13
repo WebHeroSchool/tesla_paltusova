@@ -10,164 +10,229 @@
     <title>Tesla Project</title>
 </head>
 <body>
-    <!-- Шапка сайта меню навигации-->
-    <div class="wrap__header">
-        <header class="header">
-            <img src="img/Logo.png" alt="tesla" class="header__logo">
-            <nav class="header__menu">
-                <ul class="menu__item">
-                    <li class="menu__link menu__link_red"><a href="#">Model S</a></li>
-                    <li class="menu__link"><a href="#">Model X</a></li>
-                    <li class="menu__link"><a href="#">Model 3</a></li>
-                    <li class="menu__link"><a href="#">Roadster</a></li>
-                    <li class="menu__link"><a href="#">Energy</a></li>
+    <div class="container">
+        <!-- Шапка сайта меню навигации-->
+        <div class="wrap__header">
+            <header class="header">
+                <img src="img/Logo.png" alt="tesla" class="header__logo">
+                <nav class="header__menu">
+                    <ul class="menu__item">
+                        <li class="menu__link menu__link_red"><a href="#">Model S</a></li>
+                        <li class="menu__link"><a href="#">Model X</a></li>
+                        <li class="menu__link"><a href="#">Model 3</a></li>
+                        <li class="menu__link"><a href="#">Roadster</a></li>
+                        <li class="menu__link"><a href="#">Energy</a></li>
+                    </ul>
+                </nav>
+                <ul class="header__reg">
+                    <li class="menu__link"><a href="#">Магазин</a></li>
+                    <li class="menu__link"><a href="#">Войти</a></li>
                 </ul>
-            </nav>
-            <ul class="header__reg">
-                <li class="menu__link"><a href="#">Магазин</a></li>
-                <li class="menu__link"><a href="#">Войти</a></li>
-            </ul>
-            <img src="img/icon/menu.svg" alt="menu" class="header__reg_menu">
-        </header>
-    </div>
-    <!--Часть сайта с баннером-->
+                <img src="img/icon/menu.svg" alt="menu" class="header__reg_menu">
+            </header>
+        </div>
+        <!--Часть сайта с баннером-->
 
-    <section class="banner">
-        <h1 class="banner__title">Model S</h1>
-        <p class="bunner__subtitle">Добро пожаловать в будущее!</p>
-        <img src="img/banner.png" alt="banner" class="banner__img">
-    </section>
-    <!--Информация под баннером-->
-    <section class="wrap">
-        <div class="wrap__char_item">
-            <div class="char">
-                <div class="char__item">
-                    <div class="char__item_block">
-                        <div  class="char__img">
-                            <img src="img/icon/speed.png" alt="speed" class="char__img char__img_speed">
-                            <!-- <img src="img/icon/mini_speed.png" alt="speed" class="char__img_mini"> -->
+        <section class="banner">
+            <h1 class="banner__title">Model S</h1>
+            <p class="bunner__subtitle">Добро пожаловать в будущее!</p>
+            <img src="img/banner.png" alt="banner" class="banner__img">
+        </section>
+        <!--Информация под баннером-->
+        <section class="wrap">
+            <div class="wrap__char_item">
+                <div class="char">
+                    <div class="char__item">
+                        <div class="char__item_block">
+                            <div  class="char__img">
+                                <img src="img/icon/speed.png" alt="speed" class="char__img char__img_speed">
+                            </div>
+                            <span class="char__up_big">2,7</span>
+                            <span class="char__up_mini">сек</span>
                         </div>
-                        <span class="char__up_big">2,7</span>
-                        <span class="char__up_mini">сек</span>
-                    </div>
-                    <div class="charset__second">
-                        0-100 км/час
-                    </div>
-                </div>
-                <div class="char__item">
-                    <div class="char__item_block">
-                        <div class="char__img">
-                            <img src="img/icon/stroke.png" alt="stroke" class="char__img char__img_stroke">
-                            <!-- <img src="img/icon/mini_stroke.png" alt="stroke" class="char__img_mini"> -->
+                        <div class="charset__second">
+                            0-100 км/час
                         </div>
-                        <span class="char__up_big">632</span>
-                        <span class="char__up_mini">км</span>
                     </div>
-                    <div class="charset__second">
-                        запас хода
+                    <div class="char__item">
+                        <div class="char__item_block">
+                            <div class="char__img">
+                                <img src="img/icon/stroke.png" alt="stroke" class="char__img char__img_stroke">
+                            </div>
+                            <span class="char__up_big">632</span>
+                            <span class="char__up_mini">км</span>
+                        </div>
+                        <div class="charset__second">
+                            запас хода
+                        </div>
                     </div>
-                </div>
-                <div class="char__button">
-                    <button class="char__btn_test">
-                        <img src="img/icon/test.png" alt="test" class="test__img_black">
-                        <img src="img/icon/test_red.png" alt="test" class="test__img_red">
-                        <span class="test__text">Тест драйв</span>
-                    </button>
-                    <button class="char__btn_red">Заказать</button>
+                    <div class="char__button">
+                        <button class="char__btn_test">
+                            <img src="img/icon/test.png" alt="test" class="test__img_black">
+                            <img src="img/icon/test_red.png" alt="test" class="test__img_red">
+                            <span class="test__text">Тест драйв</span>
+                        </button>
+                        <button class="char__btn_red">Заказать</button>
+                    </div>
                 </div>
             </div>
+        </section>
+        <div class="arrow__down">
+            <img src="img/icon/down.svg" alt="">
         </div>
-    </section>
-    <div class="arrow__down">
-        <img src="img/icon/down.svg" alt="">
+        <!-- Основная информация страницы-->
+        <main class="container__main">
+            <section class="container__future">
+                <h1 class="future__title">Model S</h1>
+                <aside class="future__sdb">
+                    <h2 class="sdb__title">Будущее вождения</h2>
+                    <p class="sdb__text">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</p>
+                    <div class="sdb__info">
+                        <div class="info__section">
+                            <div class="info__section_flex">
+                                <div class="info__section_img">
+                                    <img src="img/icon/phone.png" alt="phone" class="info__img">
+                                </div>
+                                <div class="info__section_text">
+                                    <div>
+                                        <span class="info__title_big">17</span>
+                                        <span class="info__title_mini">дюймов</span>
+                                    </div>
+                                    <div>
+                                        <span class="info__text_down">Большой дисплей</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__section">
+                            <div class="info__section_flex">
+                                <div class="info__section_img">
+                                    <img src="img/icon/wi-fi.png" alt="wi-fi" class="info__img">
+                                </div>
+                                <div class="info__section_text">
+                                    <div class="info__title">
+                                        <span class="info__title_mini">Беспроводное</span>
+                                    <div>
+                                        <span>обновление ПО</span>
+                                    </div>
+                                    </div>
+                                    <div class="info__text">
+                                        <p class="info__text_down">Повышенная</p>
+                                        <p class="info__text_down">функциональность</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__section">
+                            <div class="info__section_flex">
+                                <div class="info__section_img">
+                                    <img src="img/icon/bag.png" alt="bag" class="info__img">
+                                </div>
+                                <div class="info__section_text">
+                                    <div class="info__title">
+                                        <span class="info__title_big">894</span>
+                                        <span class="info__title_mini">литра</span>
+                                    </div>
+                                    <div>
+                                        <p class="info__text_down">Объем грузового</p>
+                                        <p class="info__text_down">пространства</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="future__form">
+                        <button class="future__btn">
+                            <img src="img/icon/info.png" alt="?" class="form__img">
+                            <span class="form__info">Узнать больше</span>
+                        </button>
+                        <button class="form__btn">Заказать</button>
+                    </div>
+                </aside>
+            </section>
+            <section class="conteiner__raiting">
+                <aside class="future__sdb">
+                    <div class="raiting__sdb">
+                        <h2 class="sdb__title">Самый безопасный
+                            автомобиль в мире</h2>
+                        <p class="raiting__text">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.
+                        </p>
+                    </div>
+                    <h2 class="sdb__title">Оценка защиты: </h2>
+                    <div class="star__container">
+                        <div class="raiting__star_text">
+                            <div class="raiting__list">
+                                <p class="raiting__list_item">Спереди</p>
+                            </div>
+                            <div class="raiting__list">
+                                <p class="raiting__list_item">Сбоку</p>
+                            </div>
+                            <div class="raiting__list">
+                                <p class="raiting__list_item">Сбоку (стойка)</p>
+                            </div>
+                            <div class="raiting__list">
+                                <p class="raiting__list_item">Водитель</p>
+                            </div>
+                            <div class="raiting__list">
+                                <p class="raiting__list_item">Пассажир</p>
+                            </div>
+                        </div>
+                        <div class="raiting__star_img">
+                            <div class="raiting__list_star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                            </div>
+                            <div class="raiting__list_star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                            </div>
+                            <div class="raiting__list_star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                            </div>
+                            <div class="raiting__list_star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                            </div>
+                            <div class="raiting__list_star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                                <img src="img/icon/Star.png" alt="*" class="list__star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="raiting__star">
+                        <img src="img/icon/garant.png" alt="garant" class="star__img">
+                        <div class="raiting__star_text">
+                            <h2 class="star__title">5 звезд</h2>
+                            <p class="star__subtitle">безопасности</p>
+                        </div>
+                    </div>
+                    <div class="future__form raiting__margin">
+                        <button class="future__btn">
+                            <img src="img/icon/info.png" alt="?" class="form__img">
+                            <span class="form__info">Узнать больше</span>
+                        </button>
+                        <button class="form__btn">Заказать</button>
+                    </div>
+                    <img src="img/ car.png" class="raiting__img">
+                </aside>
+            </section>
+        </main>
     </div>
-    <!-- Основная информация страницы-->
-    <main class="container__main">
-        <section class="conteiner__future">
-            <h1 class="future__title">Model S</h1>
-            <aside class="future__sdb">
-                <h2 class="sdb__title">Будущее вождения</h2>
-                <p class="sdb__text">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</p>
-                <div class="sdb__info">
-                    <div class="info__section">
-                        <img src="img/icon/phone.png" alt="phone" class="info__img">
-                        <h3 class="info__title">17 дюймов</h3>
-                        <p class="info__text">Большой дисплей</p>
-                    </div></div>>
-                    <div class="info__section">
-                        <img src="img/icon/wi-fi.png" alt="wi-fi" class="info__img">
-                        <h3 class="info__title">Беспроводное обновление ПО</h3>
-                        <p class="info__text">Повышенная функциональность</p>
-                    </div>
-                    <div class="info__section">
-                        <img src="img/icon/bag.png" alt="bag" class="info__img">
-                        <h3 class="info__title">894 литра</h3>
-                        <p class="info__text">Объем грузового пространства</p>
-                    </div>
-                </div>
-                <div class="future__form">
-                    <img src="img/icon/info.png" alt="?" class="form__img">
-                    <p class="form__info">Узнать больше</p>
-                    <button class="form__btn">Заказать</button>
-                </div>
-            </aside>
-        </section>
-        <section class="conteiner__raiting">
-            <aside class="raiting__sdb">
-                <div class="raiting__sdb">
-                    <h2 class="raiting__title">Самый безопасный
-                        автомобиль в мире</h2>
-                    <p class="raiting__text">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.
-                    </p>
-                </div>
-                <div class="raiting__sdb">
-                    <h2 class="raiting__title">Оценка защиты: </h2>
-                    <ul class="raiting__list">
-                        <li class="list__item">Спереди</li>
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                        <li class="raiting__list_item">Сбоку</li>
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                        <li class="raiting__list_item">Сбоку (стойка)</li>
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                        <li class="raiting__list_item">Водитель</li>
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                        <li class="raiting__list_item">Пассажир</li>
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                            <img src="img/icon/Star.png" alt="*" class="list__star">
-                    </ul>
-                </div>
-                <div class="raiting__star">
-                    <img src="img/icon/garant.png" alt="garant" class="star__img">
-                    <h2 class="star__title">5 звезд</h2>
-                    <p class="star__subtitle">безопасности</p>
-                </div>
-                <div class="raiting__form">
-                    <img src="img/icon/info.png" alt="?" class="form__img">
-                    <p class="form__info">Узнать больше</p>
-                    <button class="form__btn">Заказать</button>
-                </div>
-                <img src="img/ car.png" class="raiting__img">
-            </aside>
-        </section>
-    </main>
 </body>
 </html>

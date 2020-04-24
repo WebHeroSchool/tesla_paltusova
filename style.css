@@ -33,13 +33,17 @@
 
 }
 
+/* * {
+    box-sizing: border-box;
+} */
 body {
     font-family: 'montserratregular';
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
 }
 .container {
     max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 .header {
@@ -199,48 +203,66 @@ li.menu__link_red a::before {
 }
 
 /* Вторая часть сайта */
-.container__future {
+
+.flex__sdb {
+    max-width: 340px;
+    max-height: 800px;
+    color: #fff;
+    background-color: #E51937;
+    padding: 50px;
+}
+.flex__container {
     display: flex;
     justify-content: space-between;
     background-image: url(img/background.png);
-    background-position: bottom left;
-    background-repeat: no-repeat;
-    margin-top: 20px;
 
+    margin: 20px auto auto auto;
 }
-.future__title {
-    display: inline-block;
+.flex__content_img {
+    display: none;
+}
+.flex__content_title {
     color: #E51937;
     font-size: 70px;
     font-family: 'montserratsemibold';
-    margin-left: 75px;
-
-}
-.future__sdb {
-    max-width: 340px;
-    max-height: 900px;
-    background-color: #E51937;
-    color: #fff;
-    padding: 30px 50px;
+    margin-left: 70px;
 }
 .sdb__title {
     font-size: 30px;
+    margin: 0 auto;
 }
 .sdb__text {
     font-size: 15px;
-    line-height: 18px;
 }
-.form__btn {
+.info__section_flex {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.info__section_text {
+    margin-left: 20px;
+}
+.info__title_big {
+    font-size: 35px;
     font-family: 'montserratsemibold';
-    color: #fff;
-    background-color: #E51937;
-    font-weight: bold;
-    font-size: 13px;
-    text-align: center;
-    padding: 10px 38px;
-    margin-left: 30px;
-    border: 2px solid #fff;
-    text-transform: uppercase;
+
+}
+.info__title_mini {
+    font-size: 20px;
+    font-family: 'montserratsemibold';
+
+}
+.info__text_down {
+    font-size: 12px;
+    margin: 0 auto;
+}
+.future__btn {
+    display: flex;
+    align-items: center;
+}
+.future__form {
+    display: flex;
+    margin-top: 80px;
 }
 .future__btn {
     border: none;
@@ -250,77 +272,131 @@ li.menu__link_red a::before {
     text-transform: uppercase;
     display: flex;
     align-items: center;
-}
-.future__form {
-    display: flex;
-    margin-top: 150px;
-}
-.info__section_flex {
-    display: flex;
-    align-items: center;
-    margin-top: 40px;
-}
-.info__title_big {
-    font-size: 35px;
-    /* font-family: 'montserratsemibold'; */
-}
-.info__title_mini {
-    font-size: 20px;
-    margin: 0;
-    /* font-family: 'montserratsemibold'; */
-}
-.info__text_down {
-    font-size: 12px;
-    margin: 0;
-}
-.info__section_text {
-    margin-left: 20px;
+    margin-right: 15px;
 }
 .form__img {
-    margin-right: 10px;
+    margin-right: 7px;
 }
-.raiting__list_item {
-    font-size: 17px;
+.form__btn {
+    font-family: 'montserratsemibold';
+    color: #fff;
+    background-color: #E51937;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    padding: 10px 38px;
+    border: 2px solid #fff;
     text-transform: uppercase;
+    margin-left: 15px;
 }
-.star__title {
-    font-size: 50px;
-    margin-bottom: 2px;
-    margin-top: 20px;
-}
-.star__subtitle {
-    font-size: 25px;
-    margin-top: -10px;
+.conteiner__raiting {
+    background-image: url(img/ModelS.png);
+    background-repeat: no-repeat;
+    background-position: right 160px;
 }
 .star__container {
     display: flex;
 }
-.raiting__text {
-    margin: 3px 0;
-}
 .raiting__star {
-    margin-top: 30px;
+    margin-top: 55px;
     display: flex;
     align-items: center;
 }
-.raiting__list_item {
-    margin: 15px 0;
+.star__title {
+    font-size: 50px;
+    margin: 0 0 0 20px;
+}
+.star__subtitle {
+    margin: 0 0 0 20px;
+    font-size: 25px;
 }
 .raiting__list_star {
-    margin: 12px 0;
+    margin: 15px 0 0 40px;
 }
-.raiting__star_text {
-    margin-left: 20px;
+.raiting__list_item {
+    font-size: 17px;
+    text-transform: uppercase;
+    margin: 19px 0;
 }
-.raiting__margin {
-    margin-bottom: 40px;
+.raiting__list_item span {
+    text-transform: lowercase;
 }
-@media (max-width: 1024px) {
+.car__footer {
+    position: absolute;
+}
+.car__footer_img {
+    position: relative;
+    top: 150px;
+    left: 340px;
+    /* max-width: 1049px;
+    max-height: 592px; */
+    max-width: 100%;
+}
+.raiting__sdb_star {
+    margin-top: 40px;
+}
+
+
+
+
+@media (max-width: 1042px) {
     .header__menu, .header__reg {
         display: none;
     }
     .wrap {
         align-items: center;
+    }
+    .flex__container {
+        flex-direction: column;
+    }
+    .flex__sdb {
+        height: auto;
+        max-width: 100%;
+    }
+    .flex__sdb_pdg {
+        padding-top: 0px;
+    }
+    .flex__content_title {
+        float: right;
+        margin-right: 70px;
+    }
+    .flex__sdb_down {
+        margin-top: 500px;
+    }
+    .flex__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    .cont__sdb, .sdb__info {
+        margin: 0 15px 0 15px;
+        flex: 1 1 50%;
+        box-sizing: content-box;
+    }
+    .future__form {
+        justify-content: center;
+    }
+    .car__footer {
+        position: static;
+        margin-top: 50px;
+    }
+    .car__footer_img {
+        position: static;
+    }
+    .wrap__column {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .raiting__star {
+        display: none;
+    }
+    .raiting__sdb, .star__wrap {
+        flex: 1 1 50%;
+        margin: 0 15px 0 15px;
+        box-sizing: content-box;
+    }
+    .conteiner__raiting {
+        background-position: center 30px;
     }
 }
 
@@ -358,7 +434,32 @@ li.menu__link_red a::before {
     .char__up_big {
         font-size: 50px;
     }
+    .container__future {
+        flex-wrap: wrap;
+    }
+    .conteiner__raiting {
+        flex-wrap: wrap;
+    }
 }
+
+@media (max-width: 798px) {
+    .flex__content_title {
+        display: none;
+    }
+    .future__form {
+        display: none;
+    }
+    .sdb__info, .star__wrap {
+        display: none;
+    }
+    .flex__sdb_pdg {
+        padding-top: 50px;
+    }
+    .flex__sdb_down {
+        margin-top: 750px;
+    }
+}
+
 
 @media (max-width: 650px) {
     .banner h1 {

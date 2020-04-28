@@ -330,15 +330,26 @@ li.menu__link_red a::before {
     position: relative;
     top: 150px;
     left: 340px;
-    max-width: 100%;
+    width: 73vw;
+    height: auto;
 }
 .raiting__sdb_star {
     margin-top: 40px;
 }
 
 
-
-
+@media (max-width: 1258px) {
+    .car__footer_img {
+        width: 69vw;
+        height: auto;
+    }
+}
+@media (max-width: 1098px) {
+    .car__footer_img {
+        width: 67vw;
+        height: auto;
+    }
+}
 
 @media (max-width: 1042px) {
     .header__menu, .header__reg {
@@ -379,6 +390,7 @@ li.menu__link_red a::before {
     }
     .car__footer_img {
         position: static;
+        width: 100%;
     }
     .wrap__column {
         display: flex;

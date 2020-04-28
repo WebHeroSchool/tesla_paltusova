@@ -1,0 +1,102 @@
+/* Вторая часть сайта */
+
+.future__title {
+    color: #E51937;
+    font-size: 70px;
+    font-family: 'montserratsemibold';
+}
+.future__sdb {
+    background-color: #E51937;
+    color: #fff;
+}
+.sdb__title {
+    font-size: 30px;
+}
+.sdb__text {
+    font-size: 15px;
+}
+.form__btn {
+    font-family: 'montserratsemibold';
+    color: #fff;
+    background-color: #E51937;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    padding: 10px 38px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+}
+.future__btn {
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    background-color: #E51937;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+.info__title_big {
+    font-size: 35px;
+}
+.info__title_mini {
+    font-size: 20px;
+}
+.info__text_down {
+    font-size: 12px;
+}
+.raiting__list_item {
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.star__title {
+    font-size: 50px;
+    margin-bottom: 2px;
+    margin-top: 20px;
+}
+.star__subtitle {
+    font-size: 25px;
+    margin-top: -10px;
+}
+.star__container {
+    display: flex;
+}
+.raiting__text {
+    margin: 3px 0;
+}
+.raiting__star {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.conteiner__raiting {
+    background-image: url(img/ModelS.png);
+    background-repeat: no-repeat;
+    background-position: 630px 160px;
+}
+.raiting__list_item {
+    margin: 15px 0;
+}
+.raiting__list_star {
+    margin: 12px 0;
+}
+.raiting__five_text {
+    margin-left: 20px;
+}
+.raiting__margin {
+    margin-top: 110px;
+    margin-bottom: 40px;
+}
+.raiting__car {
+    position: absolute;
+    height: 0;
+}
+
+.raiting__img {
+    position: relative;
+    max-width: 1049px;
+    max-height: 592px;
+    width: 100%;
+    height: auto;
+    top: -750px;
+    margin-left: 200px;
+}
